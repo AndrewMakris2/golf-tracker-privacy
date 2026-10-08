@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golf Tracker Support</title>
+  <style>
+    :root { --bg: #fafaf9; --ink: #111; --mute: #6f6f6a; --line: #ececea; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0c0c0c; --ink: #f4f4f2; --mute: #8d8d88; --line: #222220; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 "Inter", ui-sans-serif, -apple-system, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    main { max-width: 640px; margin: 0 auto; padding: 56px 24px 96px; }
+    h1 { font-size: 34px; font-weight: 300; letter-spacing: -0.03em; margin: 0 0 8px; }
+    h2 { font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: .08em; color: var(--mute); margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line); }
+    p, li { margin: 0 0 12px; }
+    ul { padding-left: 20px; margin: 0 0 12px; }
+    .mute { color: var(--mute); }
+    .summary { font-size: 20px; font-weight: 300; line-height: 1.45; margin: 24px 0 0; }
+    a { color: inherit; }
+    details { border-top: 1px solid var(--line); padding: 14px 0; }
+    details:last-of-type { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 500; }
+    details p { margin: 10px 0 0; color: var(--mute); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Golf Tracker Support</h1>
+  <p class="mute">Help for the Golf Tracker iPhone app</p>
+
+  <p class="summary">Questions, a bug, or an idea? Email <a href="mailto:amakris03@gmail.com">amakris03@gmail.com</a>. Include your iPhone model and iOS version if something isn't working.</p>
+
+  <h2>Common questions</h2>
+
+  <details><summary>How is my handicap index calculated?</summary>
+    <p>For each round, the app works out a differential: (113 &divide; slope) &times; (your gross score &minus; course rating). The index is the average of the best 8 differentials from your most recent 20 rounds, multiplied by 0.96. With fewer than 20 rounds it uses fewer differentials, following the World Handicap System table. You need at least 3 rounds before an index appears. On the Home screen, the differentials that count are marked with a dot.</p></details>
+
+  <details><summary>Is this my official handicap?</summary>
+    <p>No. It is an estimate calculated from the scores you enter. It is not an official USGA Handicap Index or an authorised handicap from a golf association, so it may differ from the number your club or association reports.</p></details>
+
+  <details><summary>Where do I find the course rating and slope?</summary>
+    <p>They are printed on the scorecard, usually listed for each set of tees. Many courses also publish them on their website. Once you save a course, the app remembers its tees, rating and slope so you only enter them once.</p></details>
+
+  <details><summary>Does my data sync between devices?</summary>
+    <p>If you are signed in to iCloud, the app backs up your rounds and courses to your private iCloud storage and syncs them between your own devices. Open the Rounds tab and look under Data to see whether iCloud sync is on. If it says it is off, sign in to iCloud in iOS Settings. Changes can take a few moments to appear on another device.</p></details>
+
+  <details><summary>How do I get my data out?</summary>
+    <p>Open the Rounds tab, scroll to Data, and tap Export CSV. Choose where to send the file, such as Save to Files, AirDrop or Mail. It opens in Excel, Numbers or Google Sheets.</p></details>
+
+  <details><summary>How do I delete my data?</summary>
+    <p>Delete a single round or course from its edit screen. To remove everything, including the copy in your iCloud, open Rounds and tap Delete all data. Do this before deleting the app if you want the iCloud copy gone too.</p></details>
+
+  <details><summary>I got a new iPhone. How do I move my rounds?</summary>
+    <p>Sign in to the same iCloud account and install Golf Tracker. Your rounds and courses will appear after a short sync. A restored iPhone backup brings them over as well.</p></details>
+
+  <h2>Privacy</h2>
+  <p>Golf Tracker does not collect your data. Read the <a href="./">privacy policy</a>.</p>
+</main>
+</body>
+</html>
